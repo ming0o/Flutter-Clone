@@ -12,7 +12,7 @@ class _HomePageState extends State<HomePage> {
   List<Map<String, String>> items = List.generate(20, (index) {
     return {
       'title': 'Item $index',
-      'image': 'https://via.placeholder.com/150',
+      'image': 'lib/assets/images/carrot.png',
     };
   });
 
@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
     List<Map<String, String>> newItems = List.generate(10, (index) {
       return {
         'title': 'New Item ${items.length + index}',
-        'image': 'https://via.placeholder.com/150',
+        'image': 'lib/assets/images/carrot.png',
       };
     });
 
@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                         children: [
                           ClipRRect(
                             borderRadius: BorderRadius.circular(8.0), // 둥근 모서리 추가
-                            child: Image.network(
+                            child: Image.asset(
                               items[index]['image']!,
                               width: 100, // 정사각형 크기
                               height: 100, // 정사각형 크기

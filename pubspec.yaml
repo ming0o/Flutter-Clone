@@ -27,10 +27,8 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
+  assets:
+    - lib/assets/images/carrot.png
   uses-material-design: true
   fonts:
     - family: Pretendard
